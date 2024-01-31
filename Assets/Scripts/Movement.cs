@@ -6,6 +6,7 @@ public class Movement : MonoBehaviour
 {
     [SerializeField] float speed;
     [SerializeField] float jumpForce;
+    [SerializeField] float acceleration;
     [SerializeField] LayerMask ground;
 
     Rigidbody2D rb;
@@ -28,7 +29,25 @@ public class Movement : MonoBehaviour
     private void MovementHandler()
     {
         float horizontal = Input.GetAxisRaw("Horizontal");
-        rb.velocity = new Vector2(horizontal*speed,rb.velocity.y);
+        float targetspeed = horizontal * speed;
+        float currentspeed = rb.velocity.x;
+        if(currentspeed < targetspeed)
+        {
+            currentspeed += acceleration * Time.deltaTime;
+            if(currentspeed > targetspeed)
+            {
+                currentspeed = targetspeed;
+            }
+        }
+        else if(currentspeed > targetspeed)
+        {
+            currentspeed -= acceleration * Time.deltaTime;
+            if (currentspeed < targetspeed)
+            {
+                currentspeed = targetspeed;
+            }
+        }
+        rb.velocity = new Vector2(currentspeed,rb.velocity.y);
     }
     private void JumpHandler()
     {
