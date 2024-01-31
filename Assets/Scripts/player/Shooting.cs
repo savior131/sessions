@@ -9,9 +9,14 @@ public class Shooting : MonoBehaviour
     Camera cam;
     Vector2 mousePos;
     [SerializeField] Transform shoulder;
-    [SerializeField] float timeDelay;
+    [SerializeField] float shootDelay;
+    [SerializeField] Transform gunBarrel;
+    [SerializeField] GameObject bulletPrefab;
+    [SerializeField] float bulletSpeed;
+    Vector2 dir;
     Rigidbody2D rb;
     Animator anim;
+    bool canShoot = true;
     void Start()
     {
         cam=Camera.main;
@@ -22,11 +27,12 @@ public class Shooting : MonoBehaviour
     {
         AimHandler();
         AnimationHandler();
+        HandelShooting();
     }
     private void AimHandler()
     {
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
-        Vector2 dir = mousePos-(Vector2)shoulder.position;
+        dir = mousePos-(Vector2)shoulder.position;
         float rotation=Mathf.Atan2 (dir.y, dir.x)*Mathf.Rad2Deg;
         shoulder.transform.rotation = Quaternion.Euler(0,0, rotation);
     }
@@ -66,5 +72,28 @@ public class Shooting : MonoBehaviour
         {
             transform.localScale = new Vector2(Mathf.Abs(transform.localScale.x), transform.localScale.y);
         }
+    }
+
+    private void HandelShooting()
+    {
+        if (!canShoot) return;
+        if(Input.GetMouseButton(0))
+        {
+            instantiateBullet();
+            StartCoroutine("delayShooting");
+        }
+    }
+    private void instantiateBullet()
+    {
+        GameObject bullet = Instantiate(bulletPrefab, gunBarrel.transform.position, shoulder.transform.rotation);
+        dir.Normalize();
+        bullet.GetComponent<Rigidbody2D>().velocity = dir * bulletSpeed;
+    }
+
+    IEnumerator delayShooting()
+    {
+        canShoot = false;
+        yield return new WaitForSeconds(shootDelay);
+        canShoot = true;
     }
 }
