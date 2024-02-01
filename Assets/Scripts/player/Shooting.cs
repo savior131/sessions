@@ -79,15 +79,11 @@ public class Shooting : MonoBehaviour
         if (!canShoot) return;
         if(Input.GetMouseButton(0))
         {
-            instantiateBullet();
+            GameObject bullet = Instantiate(bulletPrefab, gunBarrel.transform.position, shoulder.transform.rotation);
+            dir.Normalize();
+            bullet.GetComponent<Rigidbody2D>().velocity = dir * bulletSpeed;
             StartCoroutine("delayShooting");
         }
-    }
-    private void instantiateBullet()
-    {
-        GameObject bullet = Instantiate(bulletPrefab, gunBarrel.transform.position, shoulder.transform.rotation);
-        dir.Normalize();
-        bullet.GetComponent<Rigidbody2D>().velocity = dir * bulletSpeed;
     }
 
     IEnumerator delayShooting()
