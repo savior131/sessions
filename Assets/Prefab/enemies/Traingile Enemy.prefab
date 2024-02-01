@@ -128,7 +128,7 @@ MonoBehaviour:
   dis: 12
   canshoot: 1
   bulletPrefab: {fileID: 7516613238049525568, guid: 7cbdb433b2288d34abae226ccf89d671, type: 3}
-  bulletSpeed: 20
+  bulletSpeed: 10
   shootDelay: 1.5
   shootPos: {fileID: 1479833617366442859}
 --- !u!1 &4349021354936352637
@@ -205,7 +205,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1831034065
   m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: be2c94d0e007ec24e9709a79614ce860, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -289,7 +289,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1831034065
   m_SortingLayer: 1
-  m_SortingOrder: 1
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 799624ba7d27e1f439915e4cd6a49b01, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -404,7 +404,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1831034065
   m_SortingLayer: 1
-  m_SortingOrder: 1
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: e98eeccf037618c46938c71e7c40793f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

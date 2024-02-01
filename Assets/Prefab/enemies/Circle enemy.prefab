@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6407932498865852362}
   - component: {fileID: 3225845132126983454}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: circle right eye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1831034065
   m_SortingLayer: 1
-  m_SortingOrder: 1
+  m_SortingOrder: 7
   m_Sprite: {fileID: 21300000, guid: 6f878a9e4c5e4764ebbaf2d85155aa6c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3320334672240225723}
   - component: {fileID: 9182561565891171220}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -158,7 +158,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1831034065
   m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: 3e7ffa1369d628640a610df0b00d8939, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -180,7 +180,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8715700373974567542}
   - component: {fileID: 1791180676285145845}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: circle left eye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -242,7 +242,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1831034065
   m_SortingLayer: 1
-  m_SortingOrder: 1
+  m_SortingOrder: 7
   m_Sprite: {fileID: 21300000, guid: ba043f385e148534a9c25d865c2b60f5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -266,7 +266,7 @@ GameObject:
   - component: {fileID: 7248630447232050572}
   - component: {fileID: 5884005715760800953}
   - component: {fileID: 3891998358118842411}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Circle enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}

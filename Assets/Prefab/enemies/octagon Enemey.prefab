@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8911168980108933139}
   - component: {fileID: 4669550357769404934}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: octagon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4445152801036235564}
   - component: {fileID: 7733067687648532308}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: octagon right eye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -179,7 +179,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2422955483748869885}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: fire pos (1)
   m_TagString: Untagged
   m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
@@ -214,7 +214,7 @@ GameObject:
   - component: {fileID: 6152509783703446656}
   - component: {fileID: 6268736276887107295}
   - component: {fileID: 8901989664697202170}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: octagon Enemey
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -352,7 +352,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9ba369d0bf16c14b96b5f6d9d351a6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 7516613238049525568, guid: 7cbdb433b2288d34abae226ccf89d671, type: 3}
+  bulletPrefab: {fileID: 7516613238049525568, guid: a309116af7bbed148950bcef9865fb01, type: 3}
   shootPoints:
   - {fileID: 9026215546790532715}
   - {fileID: 2422955483748869885}
@@ -369,7 +369,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5263618889135832815}
   - component: {fileID: 2746351914398762260}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: octagon left eye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -452,7 +452,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9026215546790532715}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: fire pos (0)
   m_TagString: Untagged
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
